@@ -233,18 +233,19 @@ h1, h2, h3, h4 {
 .hero__photo {
   width: 160px; height: 160px;
   border-radius: 50%;
+  overflow: hidden;
   background: linear-gradient(135deg, var(--accent-light), var(--accent));
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.hero__initials {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--accent-contrast);
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
-
 /* ===== BUTTONS ===== */
 .btn {
   display: inline-flex;
