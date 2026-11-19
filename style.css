@@ -231,14 +231,18 @@ h1, h2, h3, h4 {
   gap: 12px;
 }
 .hero__photo {
-  width: 160px; height: 160px;
+  width: 176px;
+  aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
+  border: 4px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent), var(--shadow-md);
   background: linear-gradient(135deg, var(--accent-light), var(--accent));
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  flex: 0 0 176px;
+  transform: translateY(20px);
 }
 .hero__photo img {
   width: 100%;
