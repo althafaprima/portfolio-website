@@ -401,21 +401,10 @@ h1, h2, h3, h4 {
   box-shadow: var(--shadow-md);
   outline: none;
 }
-.project-card__image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.9);
-  text-align: center;
-  padding: 16px;
-}
 .project-card__body { padding: 20px; }
 .project-card__title { font-size: 1.125rem; margin-bottom: 4px; }
 .project-card__subtitle { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 12px; }
+.project-card__description { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px; }
 .project-card__tags { display: flex; flex-wrap: wrap; gap: 8px; }
 
 /* ===== CHIPS ===== */
@@ -584,35 +573,6 @@ h1, h2, h3, h4 {
   font-weight: 500;
   color: var(--accent);
 }
-.project-modal__gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin-top: 12px;
-}
-.project-modal__gallery-item {
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  border: 1px solid var(--surface-border);
-}
-.project-modal__gallery-image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: rgba(255,255,255,0.7);
-  font-size: 0.9rem;
-}
-.project-modal__gallery-image--blurred {
-  filter: blur(8px);
-}
-.project-modal__gallery-caption {
-  padding: 10px 14px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
 .project-modal__todo {
   padding: 8px 12px;
   background: var(--bg-muted);
@@ -645,7 +605,6 @@ h1, h2, h3, h4 {
   .education-grid { grid-template-columns: 1fr 1fr; gap: 48px; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .menu-toggle { display: none; }
-  .project-modal__gallery { grid-template-columns: 1fr 1fr; }
 }
 
 /* ===== RESPONSIVE: 1280px+ ===== */
